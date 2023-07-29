@@ -1,0 +1,258 @@
+/* work sans font from google fonts */
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* navbar styles */
+
+header {
+    background-color: #FFF;
+    padding: 0px 50px 0px 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-img {
+    width: 86px;
+    height: 46px;
+    padding: 50px 10px 0px 0px;
+}
+
+.nav-title {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.text-primary {
+    color: #FF42A5;
+}
+
+.menus {
+    display: flex;
+    padding: 55px 24px 54px 0px;
+}
+
+.manus-title>ul {
+    display: flex;
+}
+
+.manus-title li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.manus-title li a {
+    text-decoration: none;
+    color: #3C354F;
+}
+
+.btn-icon {
+    width: 262px;
+    height: 56px;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-right: 100px;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+}
+
+/* banner section css style */
+
+.banner-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../images/Group\ 14.png);
+    padding-left: 100px;
+}
+
+.banner-photo {
+    width: 700px;
+    height: 700px;
+    /* padding: 20px 24px 0px 0px; */
+}
+
+.banner-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.banner-title-2,
+.gamer-banner-title,
+.funny,
+.play-games {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 95px;
+    font-weight: 800;
+}
+
+.play,
+.download,
+.support,
+.card-title {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.sign-in,
+.go-rogue,
+.know-more-btn {
+    color: #FFF;
+    border-radius: 48px;
+    background-color: #FF42A5;
+    font-size: 20px;
+    padding: 21px 40px;
+    font-weight: 600;
+}
+
+.go-rogue {
+    background-color: #4EC5F7;
+}
+
+/* We are gamer section */
+
+.gamer-section {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    background-image: url(../images/Group\ 14.png);
+}
+
+.gamer-banner-img {
+    padding-left: 55px 52px 56px 240px;
+}
+
+.gamer-banner-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.gamer-description,
+.funny-description,
+.play-games-description {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.know-more-btn {
+    margin-left: 300px;
+}
+
+.gamer-purpose {
+    color: #534C64;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#purpose {
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.funny-video-title,
+.funny,
+.play-games,
+.play-instant,
+.play-games-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 120px;
+}
+
+.funny-description {
+    text-align: center;
+}
+
+.funny-videos {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-title {
+
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+/* play-instant */
+
+.play-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.play-banner-img {
+    position: absolute;
+    margin: 410px 0px 0px 530px;
+}
+
+.play-games-title,
+.play-games-description {
+    text-align: left;
+}
+
+/* hover icon section */
+
+.icon-section{
+    margin-top: 220px;
+    background-image: url(../images/Group\ 14.png);   
+}
+
+.icon-section-1, .icon-section-2 {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+.icon-section-2{
+    margin-top: 27px;
+}
+
+.icon {
+    color: #0B0223;
+    border: 1px solid #FFF;
+    background-image: url(../images/Group\ 14.png);
+    font-size: 20px;
+    padding: 28px 29px 20px 10px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.icon:hover{
+    color: #FF42A5;
+    background-color:  #FFF;
+    border: 1px solid #FF42A5;
+    
+}
+
