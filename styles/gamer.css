@@ -329,7 +329,10 @@ footer {
     nav, .menus, .manus-title > ul , .banner-section, .gamer-section, .funny-videos, .card-title, .play-section, .icon-section{
     flex-direction: column;
          }
-         
+         header{
+            width: 10%;
+            padding: 10px;
+         }
          
          
 }
