@@ -1,27 +1,26 @@
-
-
 /* work sans font from google fonts */
 body {
     font-family: 'Work Sans', sans-serif;
 }
+
 body {
     max-width: 1920Px;
     height: 100vh;
     margin: 0 auto;
 }
 
+
 /* navbar styles */
 
 header {
     background-color: #FFF;
-    padding: 0px 50px 0px 200px;
     max-width: 120rem;
     margin: 0 auto;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-bar {
@@ -57,7 +56,7 @@ nav {
 
 .manus-title li {
     list-style: none;
-    margin-right: 20px;
+    margin-right: 30px;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -83,6 +82,7 @@ nav {
 .banner-section {
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
     align-items: center;
     background-image: url(../images/Group\ 14.png);
     padding-left: 100px;
@@ -91,7 +91,7 @@ nav {
 .banner-title {
     color: #0B0223;
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -103,7 +103,7 @@ nav {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 95px;
+    font-size: 5.93rem;
     font-weight: 800;
 }
 
@@ -143,12 +143,12 @@ nav {
 }
 
 .gamer-banner-img {
-    padding-left: 55px 52px 56px 240px;
+    padding-left: 50px;
 }
 
 .gamer-banner-title {
     text-align: right;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -157,7 +157,7 @@ nav {
 .play-games-description {
     color: #534C64;
     text-align: right;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -168,14 +168,14 @@ nav {
 .gamer-purpose {
     color: #534C64;
     text-align: right;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 #purpose {
     color: #534C64;
     text-align: right;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -186,12 +186,13 @@ nav {
 .play-games-title {
     color: #0B0223;
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     margin-top: 120px;
 }
 
 .funny-description {
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -201,12 +202,6 @@ nav {
     gap: 24px;
 }
 
-.card-title {
-
-    display: flex;
-    justify-content: center;
-    gap: 110px;
-}
 
 /* play-instant */
 
@@ -214,6 +209,7 @@ nav {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
     align-items: center;
     position: relative;
 
@@ -233,19 +229,17 @@ nav {
 /* hover icon section */
 
 .icon-section {
-    margin-top: 220px;
+    margin-top: 200px;
     background-image: url(../images/Group\ 14.png);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 27px;
+    padding-left: 100px;
+    
 }
-
-.icon-section-1,
-.icon-section-2 {
-    display: flex;
-    justify-content: center;
-    gap: 45px;
-}
-
-.icon-section-2 {
-    margin-top: 27px;
+.icon-1{
+    padding-left: 50px;
 }
 
 .icon {
@@ -324,15 +318,311 @@ footer {
     font-weight: 500;
 }
 
+/* medium and large device responsive */
 
 @media screen and (max-width: 576px) {
-    nav, .menus, .manus-title > ul , .banner-section, .gamer-section, .funny-videos, .card-title, .play-section, .icon-section{
-    flex-direction: column;
-         }
-         header{
-            width: 10%;
-            padding: 10px;
-         }
-         
-         
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    nav,
+    .menus,
+    .manus-title>ul,
+    .banner-section,
+    .gamer-section,
+    .funny-videos, .play-section {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 60px;
+    }
+
+    .manus-title li {
+        margin-bottom: 20px;
+    }
+
+    .banner-photo {
+        width: 60%;
+    }
+
+    .banner-section{
+        width: 80%;
+    }  
+    .play, .download, .support {
+        font-size: 1rem;
+    }  
+        
+        
+    
+    .banner-title{
+        padding-right: 240px;
+        font-size: 24px;
+        
+    }
+    .banner-title-2{
+        padding-right: 200px;
+        font-size: 50px;
+    }
+    .sign-in, .go-rogue{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    
+
+    .gamer-banner-img {
+        width: 80%;
+    }
+
+    .gamer-banner-title,
+    .gamer-description,
+    .gamer-purpose {
+        width: 105%;
+        text-align: center;
+    }
+
+    .gamer-description{
+        font-size: .9rem;
+    }
+
+    .know-more-btn {
+        margin-right: 260px;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .gamer-purpose, #purpose{
+        font-size: 1rem;
+    }
+    .funny-video-title, .funny, .play-games, .play-games-title{
+        font-size: 1.7rem;
+    }
+    .funny-description, .play-games-description{
+        font-size: .9rem;
+    }
+    .play-section, .footer-section{
+        margin-top: 10px;
+    }
+    
+    .play-banner-img {
+        margin: 400px 0px 0px 249px;
+    }
+    
+    .play-games, .play-games-title{
+        text-align: center;
+    }
+
+    .card{
+        width: 90%;
+        padding-left: 20px;
+    }
+    
+    .icon-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1px;
+        row-gap: 27px;
+        padding-left: 0px;
+    }
+    .icon, .icon-1{
+        padding: 0px;
+    }
+    footer{
+        height: 750px;
+    }
+    .footer-description, .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        padding: 20px;
+        
+    }
+    .footer-icon{
+        gap: 30px;
+    }
+    .footer-section{
+        padding-top: 20px;
+    }
+
+    .Privacy-policy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 20px 0px 0px 40px;
+    }
+    
+
+}
+
+/* small device responsive */
+
+@media screen and (max-width: 320px) {
+    
+    nav,
+    .menus,
+    .manus-title>ul,
+    .banner-section,
+    .gamer-section,
+    .funny-videos, .play-section {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 30px;
+    }
+
+    .manus-title li {
+        margin-bottom: 20px;
+    }
+
+    .banner-section {
+        width: 80%;
+        
+    }
+
+    .banner-photo {
+        width: 60%;
+    }
+
+    .banner-title{
+        font-size: 24px;
+        
+    }
+    .banner-title-2{
+        font-size: 50px;
+    }
+    .sign-in, .go-rogue{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    
+    .gamer-section, .funny-video-title, .icon-section{
+        margin-top: 50px;
+    }
+    .gamer-banner-img {
+        width: 80%;
+    }
+
+    .gamer-banner-title,
+    .gamer-description,
+    .gamer-purpose {
+        width: 105%;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .gamer-banner-title{
+        font-size: 2rem;
+    }
+    .gamer-description, .play-games-description{
+        font-size: 0.7rem
+    }
+
+    .know-more-btn {
+        margin-right: 260px;
+    }
+    .funny-video-title, .funny{
+        font-size: 1.4rem;
+    }
+    .funny-description{
+        font-size: .8rem;
+    }
+
+    
+
+    .icon-section {
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1px;
+        row-gap: 27px;
+        padding-left: 0px;
+    }
+    .icon, .icon-1{
+        padding: 0px;
+    }
+    footer{
+        height: 750px;
+    }
+    .footer-description, .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        padding: 20px;
+        
+    }
+    .footer-icon{
+        gap: 30px;
+    }
+    .footer-section{
+        padding-top: 20px;
+    }
+
+    .Privacy-policy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 20px 0px 0px 40px;
+    }
+}
+
+/* Tablet responsive section */
+
+@media screen and (min-width: 576px) and (max-width: 1192px) {
+
+    nav,
+    .menus,
+    .manus-title,
+    .banner-section, .gamer-section, .play-section {
+        flex-direction: column;
+    }
+
+    nav {
+        padding-left: 300px;
+    }
+
+    .manus-title {
+        margin-bottom: 50px;
+    }
+    .gamer-banner-img, .card{
+        width: 100%;
+    }
+    .funny-videos, .footer-description {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .funny-videos{
+        padding-left: 100px;
+    }
+    .icon-section, .footer-description, .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);   
+    }
+    .icon-1{
+        padding-left: 0px;
+    }
+
+    footer{
+        height: 900px;
+    }
+    .footer-section{
+        padding-top: 30px;
+    }
+    .footer-description, .footer-icon {
+        padding-left: 160px;
+        gap: 50px;
+    }
+    .footer-description{
+        padding-right: 150px;
+    }
+    .footer-icon{
+        padding-right: 160px;
+    }
+    
+    
 }
